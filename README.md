@@ -2,7 +2,7 @@
 
 In Competency Exercises, you demonstrate your skill and ability to use the programming principles you've learned in the current and previous modules. You must complete this assignment by yourself, much like a module exam. You can ask instructors for clarification about the project -- you can not ask instructors or other students for help with logic or coding. If you are struggling with the project, you can look at previous assignments where you did similar work, and you can review the pertinent sections in the book.
 
- 
+ ![before](https://github.com/bell-kevin/MilesPerGallonGUI/blob/main/beforeMPG.PNG)
 
 Module 4 Competency Project: Miles Per Gallon GUI
 
@@ -10,11 +10,11 @@ You have previously written a project for a Miles Per Gallon calculator. Here, y
 
 Here are examples of valid input:
 
-M4 MPG GUI good1    M4 MPG GUI good2
+![M4 MPG GUI good1    M4 MPG GUI good2](https://github.com/bell-kevin/MilesPerGallonGUI/blob/main/afterMPG.PNG)
 
 If there are problems with the numbers in the text fields, throw an exception, which will write an error message in the text field for displaying the result. Here are examples of invalid input:
 
-M4 MPG GUI bad1    M4 MPG GUI bad2
+![M4 MPG GUI bad1    M4 MPG GUI bad2](https://github.com/bell-kevin/MilesPerGallonGUI/blob/main/afterDoesNotCompute2.PNG)
 
 Note in the first example of valid input, where the answer is 35, the GUI displays 35.00. That requires the use of the DecimalFormat class. You learned about NumberFormat in the tip calculator project in Ch. 17. This DecimalFormat class works the same, except it doesn't add any symbols like a dollar sign. You must add an import statement to the project:
 
@@ -40,11 +40,11 @@ Make sure you use DecimalFormat to format the result to show 2 decimal places al
 
 Take 2 screenshots showing normal execution with valid input, and 2 screenshots with invalid input that show exceptions.
 
- 
+ ![bad](https://github.com/bell-kevin/MilesPerGallonGUI/blob/main/afterDoesNotCompute.PNG)
 
 Submission:the specified screenshots and the root folder for the project
 
- 
+ ![good](https://github.com/bell-kevin/MilesPerGallonGUI/blob/main/afterMPG2.PNG)
 
 Pay careful attention to the rubric for this assignment.
 
