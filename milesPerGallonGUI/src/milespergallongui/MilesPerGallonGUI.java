@@ -52,28 +52,26 @@ public class MilesPerGallonGUI extends JFrame {
     private class Listener implements ActionListener {//InnerClass eventHandling
 
         public void actionPerformed(ActionEvent e) {
-            NumberFormat money = NumberFormat.getCurrencyInstance();
-            double input, total = 0, tip = 0;
-            String tipOnly = null, totalOnly = null;
+            DecimalFormat output = new DecimalFormat("##.00");
+            double miles, gallons = 0;
+            String MPG = null;
             if (e.getSource() == howManyMilesBox) {
                 JOptionPane.showMessageDialog(null, "Click one of the buttons");
             } else {
                 try {
-                    input = Double.parseDouble(howManyMilesBox.getText());
+                    miles = Double.parseDouble(howManyMilesBox.getText());
+                    gallons = Double.parseDouble(howManyGallonsBox.getText());
                     if (e.getSource() == button1) {
                         Container contentPane = getContentPane();
                         if (e.getSource() == button1) {
-                            contentPane.setBackground(Color.LIGHT_GRAY);
+                            contentPane.setBackground(Color.PINK);
                         } // end if condition
-                        tip = input * .1;
-                        tipOnly = money.format(tip);
-                        total = tip + input;
-                        totalOnly = money.format(total);
+
+                        MPG = output.format(miles / gallons);
                     } // end if condition
-                    howManyGallonsBox.setText(" Tip: " + tipOnly
-                            + " Total: " + totalOnly);
+                    outputBox.setText(MPG);
                 } catch (NumberFormatException nfe) {
-                    input = -1;
+                    outputBox.setText("does not compute");
                 } // end try/catch   
             } // end if/else condition
         } // end actionPerformed
